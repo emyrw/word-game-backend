@@ -1,0 +1,13 @@
+version: '1.0'
+
+services:
+  postgres-db:
+    image: postgres:12.5
+    container_name: word-backend-db
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: word_game_backend_store_user
+      POSTGRES_PASSWORD: SECRET
+      POSTGRES_DB: word_game_backend_store
+

@@ -1,0 +1,19 @@
+spring:
+    application:
+        name: word-backend
+
+app:
+    datasource:
+        main:
+            driver-class-name: org.postgresql.Driver
+            jdbc-url: jdbc:postgresql://localhost:5432/word-backend
+            password: 'password'
+            username: emyr.williams
+            pool-size: 30
+
+
+server:
+    error:
+        include-binding-errors: always
+        include-message: always
+    port: 8081
