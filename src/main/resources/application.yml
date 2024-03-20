@@ -6,10 +6,9 @@ app:
     datasource:
         main:
             driver-class-name: org.postgresql.Driver
-            jdbc-url: jdbc:postgresql://localhost:5432/word-backend
-            password: 'password'
-            username: emyr.williams
-            pool-size: 30
+            jdbc-url: ${ENV_DB_URL}
+            password: ${ENV_DB_PASSWORD}
+            username: ${ENV_DB_USERNAME}
 
 
 server:
