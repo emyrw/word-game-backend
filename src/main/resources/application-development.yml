@@ -6,3 +6,9 @@ app:
       password: 'password'
       username: emyr.williams
       pool-size: 30
+
+server:
+  error:
+    include-binding-errors: always
+    include-message: always
+  port: 8081
